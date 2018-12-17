@@ -9,3 +9,7 @@ https://stackoverflow.com/a/42716331/1669860
 ## rename a remote
 
     git remote rename previous new
+
+## delete all local branches except master
+
+    git branch | grep -v "master" | xargs git branch -D 
